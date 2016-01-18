@@ -25,6 +25,7 @@ h1 {
 	font-family: "proxima-nova",sans-serif;
 	font-weight: 800;
 	margin: 0 0 20px 0;
+	font-size: 
 }
 
 h2 {
@@ -68,13 +69,21 @@ Layout
 
 /* ---------------------------------------------------------------------
 
-Sprites
+Social Logo's
 
 --------------------------------------------------------------------- */
 
 
 .twitter {
 	background: url('../img/twitter.svg') no-repeat;
+	width: 64px;
+	height: 56px;
+	display: inline-block;
+	padding: 0;
+}
+
+.twitter:hover {
+	background: url('../img/social-dark/twitter.svg') no-repeat;
 	width: 64px;
 	height: 56px;
 	display: inline-block;
@@ -88,6 +97,13 @@ Sprites
 	display: inline-block;
 }
 
+.linkedin:hover {
+	background: url('../img/social-dark/linkedin.svg') no-repeat;
+	width: 64px;
+	height: 56px;
+	display: inline-block;
+}
+
 .github {
 	background: url('../img/github.svg') no-repeat;
 	width: 64px;
@@ -95,8 +111,22 @@ Sprites
 	display: inline-block;
 }
 
+.github:hover {
+	background: url('../img/social-dark/github.svg') no-repeat;
+	width: 64px;
+	height: 56px;
+	display: inline-block;
+}
+
 .email {
 	background: url('../img/mail.svg') no-repeat;
+	width: 64px;
+	height: 56px;
+	display: inline-block;
+}
+
+.email:hover {
+	background: url('../img/social-dark/mail.svg') no-repeat;
 	width: 64px;
 	height: 56px;
 	display: inline-block;
@@ -121,72 +151,23 @@ Intro
 
 --------------------------------------------------------------------- */
 
-
 .intro { 
     padding: 20px;
     background: url('../img/hipster.jpg') no-repeat;
     background-size: cover;
     text-align: center;
-    height: 800px;
-		padding-top: 300px;
+    height: 650px;
+		padding-top: 250px;
 		color: white;
-}
-
-.intro p {
-  display: table;  
-	vertical-align: middle;
-	max-width: 33%;
-	margin: 0 auto;
-	border: 1px solid white;
-	padding: 20px;
-}
-
-.intro p span {
-	font-weight: bold;
-}
-
-.intro a {
-	color: white;
-
-}
-
-.intro img {
-    
 }
 
 /* ---------------------------------------------------------------------
 
-Outro
+Web
 
 --------------------------------------------------------------------- */
 
 
-.outro { 
-    padding: 20px;
-    background-size: cover;
-	background-color: grey;
-    text-align: center;
-    height: 800px;
-		color: #333;
-		margin: 0 auto;
-		width: 100%;
-}
-
-.outro p {
-    max-width: 33%;
-    margin: 0 auto;
-}
-
-.outro img {
-	max-width: 250px;
-}
-
-.work {
-	display: block;
-}
-.work img {
-	width: 300px;
-}
 /* ---------------------------------------------------------------------
 
 Masthead
@@ -198,16 +179,7 @@ Masthead
 
 }
 
-
 /* Logo */
-
-.site-name {
-    font-size: 30px;
-    font-weight: 700;
-    margin: 0 0 20px 0;
-    padding: 10px;
-}
-
 
 /* Navigation */
 
@@ -216,23 +188,21 @@ Masthead
 	padding: 0;
 	list-style: none;
 	background: #333;
-	height: 80px;
-	border-bottom: 3px solid white;
+	height: 50px;
+
 }
 
 .nav li {
 	float: right;
-    margin: 0;
-    padding: 0;
 }
 
 .nav a {
     background: #333;
     color: #fff;
 		display: block;
-		padding: 10px 20px;
     text-decoration: none;
-		vertical-align: middle;
+		line-height: 50px;
+		padding: 0 20px
 }
 
 .nav a:hover {
@@ -240,13 +210,11 @@ Masthead
     color: #000;
 }
 
-img {
-	padding: 20px 0 10px 20px;
+#scroll {
+	background: url('../img/scroll.png') no-repeat;
+	width: 100px;
+	display: inline;
 }
-img:hover {
-	
-}
-
 
 /* ---------------------------------------------------------------------
 
@@ -258,7 +226,7 @@ Site footer
 .site-footer {
 	color: #ccc;
 	background: #333;
-    font-size: 12px;
+  font-size: 12px;
 	padding: 10px 20px;
 }
 
@@ -273,7 +241,7 @@ Buttons
 	color: #fff;
 	background: #333;
 	border: none;
-    border-radius: 4px;
+  border-radius: 4px;
 	display: inline-block;
 	padding: 10px 15px;
 	vertical-align: middle;
@@ -318,25 +286,71 @@ Features
     margin: 10px 0;
 }
 
-
 /* ---------------------------------------------------------------------
 
-Promo
+DESIGN
 
 --------------------------------------------------------------------- */
 
-.promo {
-    padding: 30px;
-		max-width: 80%;
-		margin: 0 auto;
-		text-align: justify
+.design {
+	max-width: 800px;
+	margin: 0 auto;
 }
 
-.promo h2 {
-    margin: 0;
-		text-align: center;
+.design h2 {
+	text-align: center;
+	font-size: 20px;
+	padding-top: 30px;
+}
+.design img {
+	max-width: 360px;
+	float: left;
+	margin: 20px;
 }
 
+/* ---------------------------------------------------------------------
+
+DEVELOPMENT
+
+--------------------------------------------------------------------- */
+
+.dev {
+	max-width: 800px;
+	margin: 0 auto;
+}
+
+.dev h2 {
+	text-align: center;
+	font-size: 20px;
+	padding-top: 30px;
+}
+.dev img {
+	max-width: 360px;
+	float: right;
+	margin: 20px;
+}
+
+/* ---------------------------------------------------------------------
+
+UX
+
+--------------------------------------------------------------------- */
+
+.ux {
+	max-width: 800px;
+	margin: 0 auto;
+}
+
+.ux h2 {
+	text-align: center;
+	font-size: 20px;
+	padding-top: 30px;
+}
+.ux img {
+	max-width: 360px;
+	float: left;
+	margin: 20px;
+}
 
 /* ---------------------------------------------------------------------
 
@@ -363,7 +377,73 @@ Responsive styles
     }
 
     /* Medium Devices, Desktops */
-    @media only screen and (max-width : 992px) {
+    @media only screen and (max-width : 854px) {
+			
+			/* ---------------------------------------------------------------------
+
+DESIGN
+
+--------------------------------------------------------------------- */
+
+.design {
+	max-width: 800px;
+	margin: 0 auto;
+}
+
+.design h2 {
+	text-align: center;
+	font-size: 20px;
+	padding-top: 30px;
+}
+.design img {
+	max-width: 80%;
+	float: none;
+	margin: 20px;
+}
+
+/* ---------------------------------------------------------------------
+
+DEVELOPMENT
+
+--------------------------------------------------------------------- */
+
+.dev {
+	max-width: 800px;
+	margin: 0 auto;
+}
+
+.dev h2 {
+	text-align: center;
+	font-size: 20px;
+	padding-top: 30px;
+}
+.dev img { 
+	max-width: 80%;
+	float: none;
+	margin: 20px;
+}
+
+/* ---------------------------------------------------------------------
+
+UX
+
+--------------------------------------------------------------------- */
+
+.ux {
+	max-width: 800px;
+	margin: 0 auto;
+}
+
+.ux h2 {
+	text-align: center;
+	font-size: 20px;
+	padding-top: 30px;
+}
+.ux img {
+	max-width: 80%;
+	float: none;
+	margin: 20px;
+}
 
     }
 
@@ -373,8 +453,21 @@ Responsive styles
     }
 
     /* Extra Small Devices, Phones */ 
-    @media only screen and (max-width : 480px) {
+    @media only screen and (max-width : 435px) {
+			
+	.nav {
+		text-align: center;
+		height: 150px;
+		width: 100%;
+			}
+			
+	.nav li {
+		float: none;
+}
 
+	.nav a {
+		display: block;
+}
     }
 
     /* Custom, iPhone Retina */ 
